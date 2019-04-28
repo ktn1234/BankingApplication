@@ -74,7 +74,7 @@ public class Branch {
         }
     }
 
-    public void despoit(String name, double amount){
+    public void deposit(String name, double amount){
         Customer customer = findCustomer(name);
         if(customer != null){
             if(customer.deposit(amount)){
@@ -126,8 +126,8 @@ public class Branch {
     }
 
     public void printAllCustomers(){
-        for(Customer customer : this.customer){
-            System.out.println("1. -> " + customer.getName());
+        for(int i = 0; i < this.customer.size(); i++){
+            System.out.println((i + 1) + ". -> " + customer.get(i).getName());
         }
     }
 }

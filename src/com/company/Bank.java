@@ -73,7 +73,7 @@ public class Bank {
     public void deposit(String branchName, String customerName, double amount) {
         Branch branch = findBranch(branchName);
         if (branch != null) {
-            branch.despoit(customerName, amount);
+            branch.deposit(customerName, amount);
         } else {
             System.out.println("Error: Branch does not exist. Failed to deposit");
         }

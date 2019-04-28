@@ -53,11 +53,13 @@ public class Main {
                     printInstructions();
                     break;
                 case "2":
+                    System.out.println("Function: Adding a branch to global bank -> ");
                     System.out.println("Enter a branch name you would like to add: \n");
                     branchName = scanner.nextLine();
                     addBranch(bank, branchName);
                     break;
                 case "3":
+                    System.out.println("Function: Add customer to existing branch -> ");
                     System.out.println("Enter an existing branch:\n");
                     branchName = scanner.nextLine();
                     System.out.println("Enter the customer name: \n");
@@ -68,6 +70,7 @@ public class Main {
                     scanner.nextLine();
                     break;
                 case "4":
+                    System.out.println("Function: Check current balance for a customer at a branch -> ");
                     System.out.println("Please enter an existing branch: \n");
                     branchName = scanner.nextLine();
                     System.out.println("Please enter the customer name: \n");
@@ -75,6 +78,7 @@ public class Main {
                     checkCurrentBalanceForBranchAndCustomer(bank, branchName, customerName);
                     break;
                 case "5":
+                    System.out.println("Function: Deposit $ to a customer account at a branch -> ");
                     System.out.println("Please enter an existing branch: \n");
                     branchName = scanner.nextLine();
                     System.out.println("Please enter the customer name: \n");
@@ -85,6 +89,7 @@ public class Main {
                     scanner.nextLine();
                     break;
                 case "6":
+                    System.out.println("Function: Withdraw $ in a customer account at a branch -> ");
                     System.out.println("Please enter an existing branch: \n");
                     branchName = scanner.nextLine();
                     System.out.println("Please enter the customer name: \n");
@@ -95,6 +100,7 @@ public class Main {
                     scanner.nextLine();
                     break;
                 case "7":
+                    System.out.println("Function: Show customer transactions at a branch -> ");
                     System.out.println("Please enter an existing branch: \n");
                     branchName = scanner.nextLine();
                     System.out.println("Please enter the customer name: \n");
@@ -102,9 +108,11 @@ public class Main {
                     printAllBranchCustomerTransactions(bank, branchName, customerName);
                     break;
                 case "8":
+                    System.out.println("Function: Show branches of Global Bank -> ");
                     printBankBranches(bank);
                     break;
                 case "9":
+                    System.out.println("Function: Show customers at a branch -> ");
                     System.out.println("Please enter an existing branch:");
                     branchName = scanner.nextLine();
                     printAllBranchCustomers(bank, branchName);
@@ -124,7 +132,7 @@ public class Main {
     public static void printInstructions(){
         System.out.println("1: Print Instructions");
         System.out.println("2. Add a branch");
-        System.out.println("3. Add Customer to existing Branch");
+        System.out.println("3. Add Customer to existing branch");
         System.out.println("4. Check current balance for a customer at a branch");
         System.out.println("5. Deposit an amount of $ to a customer account at a branch");
         System.out.println("6. Withdraw an amount of $ to a customer account at a branch");
